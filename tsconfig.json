@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "jsx": "preserve",
-    "baseUrl": "./src",
+    "jsx": "react-jsx",  // 对于 React 17 及以上版本
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["src/*"]  // 如果你使用了类似的路径别名
     }
   }
 }
